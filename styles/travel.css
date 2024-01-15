@@ -1,0 +1,47 @@
+/* Shared style */
+:root {
+    --dark-1: #131318;
+    --dark-2: #424247;
+    --primary: #FF5400;
+}
+
+/* header style */
+header {
+    padding: 50px 240px;
+}
+
+.nav-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-1);
+    font-size:2rem;
+    font-weight: 800;
+}
+.nav-icon #travel{
+    color: var(--primary);
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 40px;
+    font-size: 1rem;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--dark-2);
+}
+#home{
+    color: var(--primary);
+}
