@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/travel.css">
 </head>
 
@@ -15,42 +16,29 @@
     <header>
         <nav class="header-content">
             <h3 class="nav-icon"><img src="Images/Group 40071 (2).png" alt="">Hero <span id="travel">Travel</span></h3>
-            <ul>
-                <li><a id="home" href="">Home</a></li>
-                <li><a href="">Packages</a></li>
-                <li><a href="">Testimonial</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
+            <label for="toggler"><i i class="fa fa-bars"></i></label>
+            <div class="menu">
+                <ul>
+                    <li><a id="home" href="">Home</a></li>
+                    <li><a href="">Packages</a></li>
+                    <li><a href="">Testimonial</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
         <section class="section-travel">
-            <h1>Explore Your Travel</h1>
-            <p>Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</p>
-            <div class="btn-content">
-                <button>Where go</button>
-                <div class="dropdown">
-                    <button class="dropbtn">When 
-                    <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                    </div>
-                </div> 
-                <div class="dropdown">
-                    <button class="dropbtn">Select Type
-                    <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                    </div>
+            <div class="section-cointainer">
+                <h1>Explore Your Travel</h1>
+                <p>Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</p>
+                <div class="btn-content">
+                    <button>Where go</button>
+                    <button>When<i class="fa fa-caret-down"></i></button>
+                    <button>Select Type<i class="fa fa-caret-down"></i></button>
+                    <button type="submit" value="Find Now"><i class="fa fa-search"></i>Find Now</button>
                 </div>
-                <button>Find Now</button>
             </div>
         </section>
     </main>
