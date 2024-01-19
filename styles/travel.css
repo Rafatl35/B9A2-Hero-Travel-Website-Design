@@ -1,6 +1,7 @@
 /* Shared style */
 body {
     font-family: 'Open Sans', sans-serif;
+    margin: 30px;
 }
 
 :root {
@@ -19,19 +20,22 @@ body {
     font-size: 2rem;
     font-weight: 800;
 }
+
 .nav-icon #travel {
     color: var(--primary);
 }
 
 .header-content {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
+
 nav ul {
     display: flex;
 }
+
 nav li {
     list-style: none;
     margin-right: 40px;
@@ -43,7 +47,8 @@ nav li a {
     color: var(--dark-2);
 }
 
-#toggler,label {
+#toggler,
+label {
     display: none;
 }
 
@@ -90,11 +95,65 @@ nav li a {
     border: none;
     margin: 20px;
 }
-.findnow{
-   background-color: var(--primary);
+
+.findnow {
+    background-color: var(--primary);
 }
+
+/* our popular tour section */
+.popular-tours {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.popular-tour-text {
+    width: 50%;
+}
+
+.popular-tour-text h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.popular-tours p {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.popular-tours li {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.popular-tour-img {
+    width: 50%;
+}
+
+.popular-tours img {
+    width: 100%;
+    height: 500px;
+    border-radius: 16px;
+}
+
+#readmore {
+    color: #FFF;
+    background-color: var(--primary);
+    border: none;
+    padding: 15px 35px;
+    border-radius: 5px;
+}
+
 /* Responsive for mobile */
 @media screen and (max-width:600px) {
+    body {
+        margin: 15px;
+    }
+
     .menu {
         width: 100%;
         max-height: 0;
@@ -104,13 +163,15 @@ nav li a {
     label {
         display: inline-flex;
     }
+
     .section-travel {
         width: 30%px;
         height: 583px;
-        justify-content:start;
+        justify-content: start;
         align-items: start;
 
     }
+
     .section-container h1 {
         font-size: 1.8rem;
     }
@@ -124,5 +185,25 @@ nav li a {
         height: 52px;
         border: none;
         margin: 10px;
+    }
+
+    .popular-tours {
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .popular-tour-text {
+        width: 100%;
+    }
+
+    .popular-tour-text h3 {
+        width: 100%;
+    }
+    .popular-tour-img {
+        width: 100%;
+    }
+    .popular-tours img {
+        width: 100%;
+        height: 350px;
     }
 }
