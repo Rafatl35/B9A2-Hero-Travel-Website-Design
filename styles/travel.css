@@ -104,7 +104,7 @@ label {
 .popular-tours {
     display: flex;
     width: 100%;
-    height: 600px;
+    height: 500px;
     margin-top: 40px;
     gap: 30px;
 }
@@ -148,8 +148,80 @@ label {
     border-radius: 5px;
 }
 
+/*  choose your destination*/
+.choose-dest {
+    margin-top: 40px;
+}
+
+.choose-dest-title {
+    text-align: center;
+}
+
+.choose-dest-title h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.choose-dest-title p {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0px 250px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.container:hover {
+    background-color: #131318;
+    opacity: 80%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.choose-dest {
+    width: 100%;
+}
+
+.contain-img1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.contain-img2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.contain-img3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.contain-img1 img {
+    width: 100%;
+    height: 300px;
+}
+
 /* Responsive for mobile */
-@media screen and (max-width:600px) {
+@media screen and (max-width:576px) {
     body {
         margin: 15px;
     }
@@ -192,6 +264,7 @@ label {
         flex-direction: column;
         align-items: center;
     }
+
     .popular-tour-text {
         width: 100%;
     }
@@ -199,11 +272,52 @@ label {
     .popular-tour-text h3 {
         width: 100%;
     }
+
     .popular-tour-img {
         width: 100%;
     }
+
     .popular-tours img {
         width: 100%;
         height: 350px;
     }
+
+    .choose-dest {
+        margin-top: 450px;
+    }
+
+    .choose-dest-title h3 {
+        font-size: 40px;
+        font-weight: 800;
+    }
+
+    .choose-dest-title p {
+        padding: 0px;
+        font-size: 1rem;
+    }
+
+    .choose-dest-title h3 {
+        font-size: 1.5rem
+    }
+
+    .contain-img1 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contain-img2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contain-img3 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .choose-dest-img img {
+        width: 350px;
+        height: 175px;
+    }
+
 }
