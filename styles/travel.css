@@ -19,14 +19,13 @@ body {
     font-size: 2rem;
     font-weight: 800;
 }
-
 .nav-icon #travel {
     color: var(--primary);
 }
 
 .header-content {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -36,8 +35,7 @@ nav ul {
 nav li {
     list-style: none;
     margin-right: 40px;
-    font-size: 1rem;
-
+    font-size: 1.2rem;
 }
 
 nav li a {
@@ -82,13 +80,15 @@ nav li a {
 .btn-content {
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-content button {
     width: 174px;
     height: 52px;
     border: none;
-    margin-right: 24px;
+    margin: 20px;
 }
 .findnow{
    background-color: var(--primary);
@@ -123,6 +123,6 @@ nav li a {
         width: 255px;
         height: 52px;
         border: none;
-        margin-bottom: 16px;
+        margin: 10px;
     }
 }
