@@ -8,6 +8,9 @@ body {
     --dark-1: #131318;
     --dark-2: #424247;
     --primary: #FF5400;
+    --font-header: 2.5rem;
+    --font-header2: 1.5rem;
+    --font-body: 1.2rem;
 }
 
 /* header style */
@@ -153,6 +156,7 @@ label {
     margin-top: 40px;
     width: 100%;
 }
+
 .choose-dest-title {
     text-align: center;
 }
@@ -164,7 +168,7 @@ label {
 
 .choose-dest-title p {
     color: rgba(19, 19, 24, 0.70);
-    font-size: 1.2rem;
+    font-size: var(--font-body);
     font-weight: 400;
     padding: 0px 250px;
 }
@@ -186,6 +190,7 @@ label {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .contain-img1 {
     display: flex;
     width: 100%;
@@ -272,25 +277,57 @@ label {
 }
 
 /* Deals & Discount */
-.discounts{
+.discounts {
     margin-top: 40px;
 }
-.discount-title{
+
+.discount-title {
     text-align: center;
 }
-.discount-section1 img{
+
+.discount-title h3 {
+    font-size: var(--font-header);
+    color: var(--dark-1);
+}
+
+.discount-title p {
+    font-size: var(--font-body);
+    color: var(--dark-2);
+    padding: 0px 300px;
+}
+
+.discount-section1 img {
     border-radius: 16px;
     width: 100%;
     height: auto;
-    
+
 }
-.discount-item1 img{
+
+.discount-section2 img {
+    border-radius: 16px;
+    width: 100%;
+    height: auto;
+
+}
+
+.image-icon img {
     width: 24px;
     height: 24px;
     align-items: center;
 }
 
+.image-icon a {
+    text-decoration: none;
+    color: var(--dark-1);
+    padding: 10px;
+}
+
 .discount-section1 {
+    position: relative;
+    color: black;
+}
+
+.discount-section2 {
     position: relative;
     color: black;
 }
@@ -305,9 +342,52 @@ label {
     top: 50%;
     left: 50%;
     transform: translate(-10%, -50%);
-    background-color: white;
-    
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    width: 579px;
+    height: 389px;
+    padding: 30px;
 }
+
+#discount-item-title {
+    font-size: var(--font-header2);
+    color: var(--dark-1);
+}
+
+#discount-item-body {
+    font-size: var(--font-body);
+}
+
+#price-tag {
+    color: var(--primary);
+}
+
+#book-now {
+    width: 150px;
+    height: 52px;
+    border-radius: 8px;
+    color: #FFF;
+    background: var(--primary);
+    border: none;
+}
+
+.discount-item2 {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(10%, -50%);
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    width: 579px;
+    height: 389px;
+    padding: 30px;
+
+}
+
 /* Footer section */
 .footer {
     margin-top: 40px;
@@ -341,6 +421,7 @@ label {
     text-align: center;
     color: var(--dark-1);
 }
+
 /* Responsive for mobile */
 @media screen and (max-width:576px) {
     body {
@@ -460,4 +541,61 @@ label {
         font-size: 0.8rem;
     }
 
+    .discount-title p {
+        padding: 0px;
+    }
+
+    .discount-section1 img {
+        border-radius: 16px;
+        width: 335px;
+        height: 500px;
+    }
+
+    .discount-section2 img {
+        border-radius: 16px;
+        width: 335px;
+        height: 500px;
+    }
+
+    .discount-item1 {
+        bottom: 50%;
+        /* right: 50%; */
+        transform: translate(-50%, -50%);
+        width: 303px;
+        height: 297px;
+        padding: 0px;
+    }
+
+    .discount-item2 {
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 303px;
+        height: 297px;
+        padding: 0px;
+    }
+
+    .image-icon img {
+        width: 10px;
+        height: 10px;
+        align-items: center;
+    }
+
+    #discount-item-title {
+        font-size: 20px;
+        color: var(--dark-1);
+    }
+
+    #discount-item-body {
+        font-size: var(--font-body);
+    }
+
+    #book-now {
+        width: 130px;
+        height: 40px;
+        border-radius: 8px;
+        color: #FFF;
+        background: var(--primary);
+        border: none;
+    }
 }
