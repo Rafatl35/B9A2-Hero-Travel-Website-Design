@@ -151,8 +151,8 @@ label {
 /*  choose your destination*/
 .choose-dest {
     margin-top: 40px;
+    width: 100%;
 }
-
 .choose-dest-title {
     text-align: center;
 }
@@ -186,11 +186,6 @@ label {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-.choose-dest {
-    width: 100%;
-}
-
 .contain-img1 {
     display: flex;
     width: 100%;
@@ -295,6 +290,24 @@ label {
     align-items: center;
 }
 
+.discount-section1 {
+    position: relative;
+    color: black;
+}
+
+/* .container:hover {
+    background-color: #131318;
+    opacity: 80%;
+} */
+
+.discount-item1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -50%);
+    background-color: white;
+    
+}
 /* Footer section */
 .footer {
     margin-top: 40px;
@@ -328,7 +341,6 @@ label {
     text-align: center;
     color: var(--dark-1);
 }
-
 /* Responsive for mobile */
 @media screen and (max-width:576px) {
     body {
@@ -379,20 +391,20 @@ label {
     }
 
     .popular-tour-text h3 {
-        width: 100%;
+        width: 90%;
     }
 
     .popular-tour-img {
-        width: 100%;
+        width: 80%;
     }
 
     .popular-tours img {
         width: 100%;
-        height: 350px;
+        height: auto;
     }
 
     .choose-dest {
-        margin-top: 450px;
+        margin-top: 500px;
     }
 
     .choose-dest-title h3 {
