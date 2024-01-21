@@ -274,6 +274,35 @@ label {
     padding: 10px;
 }
 
+/* Footer section */
+.footer{
+    margin-top: 40px;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 30px 250px;
+}
+.footer-title p{
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--dark-2);
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.social-media img{
+    width: 64px;
+    height: 64px;
+}
+#rights{
+    margin: 50px;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--dark-1);
+}
 /* Responsive for mobile */
 @media screen and (max-width:576px) {
     body {
@@ -378,6 +407,16 @@ label {
     }
     .why-choose-card{
         grid-template-columns: 1fr;
+    }
+
+    /* footer section */
+    .footer{
+        background: rgba(19, 19, 24, 0.05);
+        padding:0px;
+    }
+    #rights{
+        margin: 0px;
+        font-size: 0.8rem;
     }
 
 }
