@@ -541,7 +541,7 @@ nav li a {
         overflow: hidden;
     }
 
-    label {
+    #toggle-level {
         display: inline-flex;
     }
 
