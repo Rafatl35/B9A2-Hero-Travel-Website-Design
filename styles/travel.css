@@ -69,6 +69,7 @@ nav li a {
     justify-content: center;
     align-items: center;
     color: #FFF;
+    border-radius: 16px;
 }
 
 .section-container {
